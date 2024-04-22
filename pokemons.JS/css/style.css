@@ -1,0 +1,113 @@
+/* Css start */
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(../img/Pikachu-Background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: right;
+    
+}
+
+.js-poke-list{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.button-hover{
+    width: 30%;
+    height: 3em;
+    border-radius: 30em;
+    font-size: 15px;
+    font: inherit;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 6px 6px 12px #c5c5c5,
+    -6px -6px -12px #c5c5c5;
+}
+.button-hover:before{
+    content: '';
+    width: 0;
+    height: 3em;
+    /* border-radius: 30em; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #0fd850 0%, #f9d850 100%);
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+
+.button-hover:hover::before{
+    width: 9em;
+
+}
+
+.js-pokemons-item{
+    background-color: #3c5077;
+    width: 200px;
+    text-align: center;
+    margin-bottom: 10px;
+    height: auto;
+}
+
+.js-search{
+    margin-top: 10px;
+    border-radius: 10px !important;
+    border: 2px solid orange;
+    color: black;
+    padding: 5px 25px;
+}
+.js-selector{
+    margin-top: 10px;
+    border-radius: 10px !important;
+    border: 2px solid orange;
+    color: black;
+    padding: 5px 25px;
+}
+.select_type{
+    margin-top: 10px;
+    border-radius: 10px !important;
+    border: 2px solid orange;
+    color: black;
+    padding: 5px 25px;
+}
+.btn-success{
+    margin-top: 10px;
+    margin-left: 3px;
+    border-radius: 10px !important;
+    padding: 6px 20px !important;
+}
+li img{
+    width: auto !important;
+    height: auto !important;
+}
+li h3{
+    color: gold;
+    font-family: fantasy;
+}
+li span{
+    color: #fff;
+}
+
+.js-pokemons-button{
+    border: none !important;
+    border-radius: 0 !important;
+}
+
+.pokemons-summary {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* Css end */

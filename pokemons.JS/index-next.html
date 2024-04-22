@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="index-next-body">
+    
+
+    <div class="container mt-3">
+        <div class="row">
+            <ul class="js-poke-list ">
+                
+            </ul>
+        </div>
+    </div>
+
+    <nav aria-label="Page navigation example">
+        <ul class="pagination d-flex justify-content-center">
+          <li class="page-item"><a class="page-link" href="index.html">1</a></li>
+          <li class="page-item"><a class="page-link" href="index-next.html">2</a></li>
+        </ul>
+      </nav>
+
+
+
+      <template class="js-poke-template">
+
+        <li class="js-pokemons-item ">
+            <img class="js-pokemons-image" src="" alt="">
+            <h3 class="js-pokemons-title"></h3>
+            <span class="js-pokemon-type mx-2">
+                    
+            </span>
+            <div class="js-pokemon-types d-flex justify-content-around mb-3 align-items-center">
+               <span class="js-pokemons-weight">
+                
+               </span>
+               <span class="js-pokemons-heigth">
+                
+               </span>
+            </div>
+            <div class="d-grid">
+                <button data-bs-toggle="modal" data-bs-target="#modal" class="js-pokemons-button btn btn-outline-success">Watch More Info</button>
+            </div>
+        </li>
+
+    </template>
+
+    <div class="modal js-pokemons-modal " id="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body row">
+                    <div class="col-5">
+                        <img class="js-modal-image" src="" alt="">
+                    </div>
+                    <div class="col-7">
+                        <h3 class="js-modal-title">
+                            
+                        </h3>
+                        <i class="pokemons-weaknesses">
+                            
+                        </i>
+                        <div>
+                            <span class="js-modal-egg">
+
+                            </span>
+                        </div>
+                        <div>
+                            <span class="js-modal-spawn_time">
+
+                            </span>
+                        </div>
+                        <span class="js-modal-next_evolution">
+
+                        </span>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+        <script
+        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"
+    ></script>
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"
+    ></script>
+    <script src="js/pokemons.js"></script>
+    <script src="js/body2.js"></script>
+</body>
+</html>
